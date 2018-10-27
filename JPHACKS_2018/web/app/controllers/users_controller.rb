@@ -4,6 +4,14 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    gon.data = []
+    gon.lab = []
+    gon.linedata = []
+    Laboratory.count.times do |num|
+      gon.data << User.where(laboratory_id: num+1).count
+      gon.lab << Laboratory.find(num+1).name
+      gon.linedata << User.where(laboratory_id: num+1).average(:gpa)
+    end
   end
 
   def new
