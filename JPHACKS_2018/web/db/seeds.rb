@@ -11,9 +11,9 @@ lab = Array.new()
 #   lab << Faker::Japanese::Name.last_name # https://github.com/tily/ruby-faker-japanese
 # end
 
-lab = ["長田・谷口","玉城","和田","長山","名嘉村","遠藤","山田","赤嶺","河野","岡崎","吉田","姜","宮里","國田","當間"]
+lab = ["美墨","雪城","九条","日向","美翔","夢原","夏木","春日野","秋元","水無月","美々野","桃園","蒼乃","山吹","東"]
 
-60.times do |n|
+59.times do |n|
   email = Faker::Internet.email
   gpa = format("%.2f",rand(0.0..3.9))
   password = "password"
