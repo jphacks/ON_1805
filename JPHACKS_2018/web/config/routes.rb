@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'top/home'
+  get '/' => "top#home"
   get 'aggregate/show'
   get 'users/new'
   resources :users
