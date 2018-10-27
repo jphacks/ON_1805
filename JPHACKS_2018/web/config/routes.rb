@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/' => "top#home"
+  get '/', to: "users#index"
   get 'aggregate/show'
   resources :users
   post '/signup',  to: 'users#create'
