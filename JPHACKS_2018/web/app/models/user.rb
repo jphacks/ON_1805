@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   before_save { self.email = self.email.downcase }
 
+  belongs_to :laboratory
+
   VALID_IE_NUMBER_REGEX = /\A[0-9]{2}57+[0-9]{2}\z/
   validates :ie_number, presence: true,
                         format: { with: VALID_IE_NUMBER_REGEX }
@@ -18,6 +20,4 @@ class User < ApplicationRecord
   validates :gpa, presence: true,
                   format: { with: VALID_GPA_REGEX }
 
-  validates :lab, presence: true
-                  
 end

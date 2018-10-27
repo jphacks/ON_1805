@@ -10,16 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_25_024249) do
+ActiveRecord::Schema.define(version: 2018_10_27_053834) do
+
+  create_table "laboratories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "ie_number"
+    t.integer "laboratory_id"
     t.string "email"
     t.string "gpa"
-    t.string "lab"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.index ["laboratory_id"], name: "index_users_on_laboratory_id"
   end
 
 end
