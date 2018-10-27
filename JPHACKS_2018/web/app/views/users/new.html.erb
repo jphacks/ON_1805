@@ -18,8 +18,8 @@
       <%= f.label :gpa, "GPA"%>
       <%= f.text_field :gpa %>
 
-      <%= f.label :lab, "希望研究室" %>
-      <%= f.text_field :lab %>
+      <%= f.label :laboratory_id, "希望研究室" %>
+      <%= f.select :laboratory_id, Laboratory.all.map {|n| [n.name, n.id]} %>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
