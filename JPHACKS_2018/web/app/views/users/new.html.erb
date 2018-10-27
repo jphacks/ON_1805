@@ -9,16 +9,16 @@
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :ie_number %>
+      <%= f.label :ie_number, "学籍番号(半角数字のみ)" %>
       <%= f.text_field :ie_number %>
 
       <%= f.label :email %>
       <%= f.email_field :email %>
 
-      <%= f.label :gpa %>
+      <%= f.label :gpa, "GPA"%>
       <%= f.text_field :gpa %>
 
-      <%= f.label :lab %>
+      <%= f.label :lab, "希望研究室" %>
       <%= f.text_field :lab %>
 
       <%= f.label :password %>
