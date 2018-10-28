@@ -20,11 +20,10 @@ end
   email = Faker::Internet.email
   gpa = format("%.2f",rand(0.0..3.9))
   password = "password"
-  User.create!(id: n+1,
-               ie_number: "0057#{sprintf("%02d",n+1)}",
+  User.create!(ie_number: "0057#{sprintf("%02d",n+1)}",
                email: email,
                gpa: gpa,
-               laboratory_id: rand(1..15),
+               laboratory_id: rand(1..15).to_f,
                password: password,
                password_confirmation: password,
                )

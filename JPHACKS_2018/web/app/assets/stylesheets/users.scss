@@ -3,52 +3,85 @@
 // You can use Sass (SCSS) here: http://sass-lang.com
 
 .header {
+  width: 100%;
   background-color : #16102a;
   height : 90px;
   display: flex;
   justify-content: center;
   padding : 20px;
   border-bottom: solid 3px #FFFFFF;
+  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .header-logo{
   font-size : 32px;
   color : #FFFFFF;
-  background-color : #16102a;;
-  width : 15%;
+  background-color : #16102a;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.goUser{
+  padding-left: 30px;
+
+  //右寄せしたい
+  display: flex;
   justify-content: center;
 }
 
 
 .title1{
   color : #FFFFFF;
-  font-size : 100px;
+  font-size : 150px;
   position : relative;
-  top : 30px;
-  left : 100px;
+  top : 50px;
+  padding-left : 7%;
+  display: flex;
+  //justify-content: center;
 }
 
 
 .title2{
   color : #FFFFFF;
-  font-size : 100px;
+  font-size : 150px;
   position : relative;
-  left : 100px;
-  top : 30px;
+  padding-left : 7%;
+  top : 50px;
+  display: flex;
+  //justify-content: center;
+}
+
+.subTitle{
+  color : #FFFFFF;
+  font-size : 40px;
+  position : relative;
+  padding-left : 7%;
+  top : 50px;
+  padding-bottom: 80px;
+  display: flex;
+  //justify-content: center;
 }
 
 
 .goSignup{
   position : relative;
-  left : 100px;
+  padding-left : 7%;
   top : 30px;
+  //display: flex;
+  //justify-content: center;
+
 }
 
 
 .main {
+  width: 100%;
   background-color : #16102a;
-  height :9900px;
+  height :950px;
+  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+body{
+  width:100%;
 }
 
