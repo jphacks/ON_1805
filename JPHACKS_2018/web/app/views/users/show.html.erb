@@ -1,13 +1,20 @@
-<%= render 'layouts/header' %>
+<html>
+   <head>
+     <meta charset="utf-8">
+     <title>WishLabo</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="users.scss">
+   </head>
+<body>
+  <%= @user.ie_number %>の情報
+  <br>
+  <br>
+  e-mail：<%= @user.email %>
+  <br>
+  GPA：<%= @user.gpa %>
+  <br>
+  希望研究室：<%= @user.laboratory.name %>研
 
-<%= @user.ie_number %>の情報
-<br>
-<br>
-e-mail：<%= @user.email %>
-<br>
-GPA：<%= @user.gpa %>
-<br>
-希望研究室：<%= @user.laboratory.name %>研
-
-<canvas id="myChart" width="100" height="30"></canvas>
-<script>draw_graph();</script>
+  <canvas id="myChart" width="100" height="30"></canvas>
+  <script>draw_graph();</script>
+<body>
