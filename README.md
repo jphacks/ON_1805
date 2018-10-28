@@ -1,6 +1,6 @@
 # Wish Labo
 
-[![Wish Labo](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
+[![Wish Labo](https://github.com/jphacks/ON_1805/blob/readme/picture/wishlabo.png)](https://www.youtube.com/watch?v=Hf252VSwvuc&feature=youtu.be)
 
 アプリケーションURL:https://wishlab.herokuapp.com
 ## 製品概要
