@@ -14,27 +14,26 @@ window.draw_graph = ->
 
   for i in [0...barNum]
     ##labels[i] = 'data' + i
-    bgColors[i] = 'rgba(255, 0, 0, 0.8)'
+    bgColors[i] = 'rgba(107, 204, 255, 1)'
     bdColors[i] = 'rgba(255, 255, 255, 1)'
   myChart = new Chart(ctx, {
     type: 'bar',
     data: {
       labels: gon.lab
       datasets: [{
-        label: '研究室ごとの希望者',
-        data: gon.data
-        backgroundColor: bgColors,
-        borderColor: bdColors,
-        borderWidth: 1
-        yAxisID: "y1"
+        label: 'GPA平均',
+        data: gon.linedata,
+        type: 'line',
+        fill: false,
+        borderColor: 'rgba(255, 100, 100, 2)'
+        yAxisID: "y2"
       },{
-          label: 'GPA平均',
-          data: gon.linedata,
-          type: 'line',
-          fill: false,
-          borderColor: 'rgba(60, 190, 20, 10)'
-          yAxisID: "y2"
-
+          label: '研究室ごとの希望者',
+          data: gon.data
+          backgroundColor: bgColors,
+          borderColor: bdColors,
+          borderWidth: 1
+          yAxisID: "y1"
           }],
     },
     options: {
