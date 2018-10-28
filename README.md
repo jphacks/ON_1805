@@ -1,7 +1,8 @@
-# サンプル（プロダクト名）
+# Wish Labo
 
-[![Product Name](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
+[![Wish Labo](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
 
+アプリケーションURL:https://wishlab.herokuapp.com
 ## 製品概要
 ### Statistic X Tech
 
@@ -37,7 +38,8 @@
 #### フレームワーク・ライブラリ・モジュール
 * Ruby on Rails
 * Docker 
-* chart.js その他
+* chart.js 
+* HerokuDB その他
 #### デバイス
 * 
 * 
