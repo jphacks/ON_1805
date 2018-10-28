@@ -16,8 +16,8 @@ class User < ApplicationRecord
   validates :password, presence: true,
                        length: { minimum: 6 }
 
-  VALID_GPA_REGEX = /\A[0-3]+\.+[0-9]{2}\z|\A[4]+\.+[0]{2}\z/
-  validates :gpa, presence: true,
-                  format: { with: VALID_GPA_REGEX }
+  # VALID_GPA_REGEX = /\A[0-3]+\.+[0-9]{2}\z|\A[4]+\.+[0]{2}\z/
+  validates :gpa, presence: true
+                  # format: { with: VALID_GPA_REGEX }
 
 end
